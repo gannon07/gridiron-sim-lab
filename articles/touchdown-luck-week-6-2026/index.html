@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Touchdown Luck After Five Weeks | Pigskin Projections</title><meta name="description" content="Which players have scored fewer touchdowns than their goal-line work says, led by Ashton Jeanty, and which have scored a lot more, led by Jaxon Smith-Njigba. What our model expects from each of them from here."><link rel="canonical" href="https://pigskinprojections.com/articles/touchdown-luck-week-6-2026/">
+<meta property="og:type" content="article"><meta property="og:title" content="Touchdown Luck After Five Weeks | Pigskin Projections"><meta property="og:description" content="Which players have scored fewer touchdowns than their goal-line work says, led by Ashton Jeanty, and which have scored a lot more, led by Jaxon Smith-Njigba. What our model expects from each of them from here."><meta property="og:url" content="https://pigskinprojections.com/articles/touchdown-luck-week-6-2026/"><meta property="og:site_name" content="Pigskin Projections"><meta property="article:published_time" content="2026-10-14">
+<meta property="og:image" content="https://pigskinprojections.com/articles/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://pigskinprojections.com/articles/assets/og.png"><link rel="icon" type="image/svg+xml" href="/articles/assets/pig.svg"><meta name="twitter:title" content="Touchdown Luck After Five Weeks | Pigskin Projections"><meta name="twitter:description" content="Which players have scored fewer touchdowns than their goal-line work says, led by Ashton Jeanty, and which have scored a lot more, led by Jaxon Smith-Njigba. What our model expects from each of them from here.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root{--ground:#ffffff;--surface:#ffffff;--sunk:#eef1f4;--rule:#d6dce2;--rule-soft:#e6eaee;--ink:#13201a;--ink-2:#4a5a51;--ink-3:#77857c;--accent:#c84b1c;
+--font-d:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--font-b:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--ground:#0f1512;--surface:#161e1a;--sunk:#1d2621;--rule:#2c3832;--rule-soft:#232d28;--ink:#eaf0eb;--ink-2:#b3c0b8;--ink-3:#7f8e85;--accent:#f07a4a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.65 var(--font-b);padding:0 16px 56px}
+.wrap{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:10px 20px;padding:22px 0 14px;border-bottom:2px solid var(--ink)}
+header.top .name{font:700 32px/.9 var(--font-d);text-transform:uppercase;letter-spacing:.01em;color:var(--ink);text-decoration:none}
+nav.site{display:flex;gap:18px;flex-wrap:wrap}
+header.top .name{display:inline-flex;align-items:center;gap:12px}
+header.top .logo{width:44px;height:44px;display:block;flex:none}header.top .logo svg{width:100%;height:100%;display:block}
+nav.site a{font:600 15px/1 var(--font-d);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;padding:6px 0;border-bottom:3px solid transparent}
+nav.site a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.site a:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.meta{color:var(--ink-3);font-size:13px;margin:26px 0 4px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+h1{font:700 44px/1 var(--font-d);text-transform:uppercase;letter-spacing:.01em;margin:0 0 10px;text-wrap:balance}
+.dek{color:var(--ink-2);font-size:18px;margin:0 0 26px;max-width:62ch}
+article h2{font:700 26px/1.05 var(--font-d);text-transform:uppercase;letter-spacing:.02em;margin:36px 0 8px;text-wrap:balance}
+article p,article li{max-width:66ch}
+article p{margin:0 0 14px}
+.tw{overflow-x:auto;margin:6px 0 18px;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:15px;font-variant-numeric:tabular-nums}
+th{font:600 11px/1.2 var(--font-b);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);text-align:right;padding:10px 12px;border-bottom:1px solid var(--rule)}
+td{padding:9px 12px;border-bottom:1px solid var(--rule-soft);text-align:right}
+th:first-child,td:first-child{text-align:left}
+tr:last-child td{border-bottom:0}
+.list{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-direction:column;gap:0}
+.list li{padding:18px 0;border-bottom:1px solid var(--rule)}
+.list a.t{font:700 26px/1.05 var(--font-d);text-transform:uppercase;letter-spacing:.01em;color:var(--ink);text-decoration:none}
+.list a.t:hover{color:var(--accent)}
+.list p{margin:6px 0 0;color:var(--ink-2)}
+.list .d{font-size:12px;color:var(--ink-3);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.foot{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);color:var(--ink-3);font-size:12px}
+.foot p{margin:0 0 8px;max-width:90ch}
+@media (max-width:600px){h1{font-size:36px}header.top .name{font-size:26px}}
+.nlband{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin:18px 0 0;padding:16px 20px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.nlband:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.nltxt{display:flex;flex-direction:column;gap:4px}
+.nltxt b{font:700 24px/1 var(--font-d);text-transform:uppercase;letter-spacing:.02em}
+.nltxt span{font-size:14px;opacity:.95}
+.nlfree{display:inline-block;font:700 15px/1 var(--font-d);font-style:normal;letter-spacing:.08em;text-transform:uppercase;background:#fff;color:var(--accent);padding:5px 8px;border-radius:4px;margin-right:10px;vertical-align:4px}
+.nlbtn{font:700 17px/1 var(--font-d);text-transform:uppercase;letter-spacing:.05em;background:#fff;color:#13201a;padding:12px 18px;border-radius:6px;white-space:nowrap}
+.nlend{margin-top:36px}
+nav.site a.nlnav{color:var(--accent)}
+@media (max-width:600px){.nlbtn{width:100%;text-align:center;white-space:normal;font-size:16px}}
+</style></head><body><div class="wrap">
+<header class="top"><a class="name" href="/"><span class="logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080"><circle cx="540" cy="540" r="540" fill="#13201a"/><path d="M300 360 L230 180 L440 290 Z" fill="#c84b1c"/><path d="M780 360 L850 180 L640 290 Z" fill="#c84b1c"/><circle cx="540" cy="580" r="330" fill="#c84b1c"/><g fill="#fff"><rect x="420" y="330" width="240" height="18" rx="9"/><rect x="441" y="306" width="18" height="66" rx="9"/><rect x="486" y="306" width="18" height="66" rx="9"/><rect x="531" y="306" width="18" height="66" rx="9"/><rect x="576" y="306" width="18" height="66" rx="9"/><rect x="621" y="306" width="18" height="66" rx="9"/></g><circle cx="420" cy="510" r="36" fill="#13201a"/><circle cx="660" cy="510" r="36" fill="#13201a"/><ellipse cx="540" cy="680" rx="160" ry="110" fill="#fff"/><ellipse cx="488" cy="680" rx="28" ry="42" fill="#13201a"/><ellipse cx="592" cy="680" rx="28" ry="42" fill="#13201a"/></svg></span>Pigskin Projections</a>
+<nav class="site" aria-label="Site"><a href="/">Projections</a><a href="/articles/" aria-current="page">Articles</a><a href="https://www.instagram.com/pigskin_projections/" target="_blank" rel="noopener">Instagram</a><a class="nlnav" href="https://pigskin-projections.kit.com/saturday" target="_blank" rel="noopener">Free Saturday Email</a></nav></header>
+<a class="nlband" href="https://pigskin-projections.kit.com/saturday" target="_blank" rel="noopener"><span class="nltxt"><b><i class="nlfree">100% Free</i>Your whole fantasy week in one free email</b><span>Every Saturday morning, with the start/sit calls up top. Unsubscribe anytime.</span></span><span class="nlbtn">Get the Free Saturday Email</span></a>
+<p class="meta">October 14, 2026</p><article><h1>Touchdown Luck After Five Weeks</h1><p class="dek">Which players have scored fewer touchdowns than their goal-line work says, led by Ashton Jeanty, and which have scored a lot more, led by Jaxon Smith-Njigba. What our model expects from each of them from here.</p>
+<p>Touchdowns are worth a lot of fantasy points, and they're the least steady part of the game. A running back can get the ball at the 2-yard line three weeks in a row and get tackled every time. A receiver can catch two long touchdowns in one afternoon. Five weeks in, some players' touchdown totals don't match where they've been getting the ball.</p>
+<p>Everything here is half PPR for a 12-team league, from Wednesday morning's update.</p>
+<h2>How We Measure It</h2>
+<p>For touchdowns, where a player gets the ball matters a lot. From 2021 to 2025, a carry from inside the 5-yard line turned into a touchdown about 4 times in 10. A carry from outside the 20 scored about once in 200 tries. Targets work the same way: almost half of the targets inside the 5 were touchdowns.</p>
+<p>So for every carry and target this season, we used those rates to count how many touchdowns an average player would have scored with the same chances. Then we compared that with how many he actually scored. The carries and targets come from the <a href="https://github.com/nflverse/nflverse-data" target="_blank" rel="noopener">nflverse play-by-play data</a> for Weeks 1 to 5.</p>
+<p>Our model projects touchdowns the same way, mostly from where a player gets the ball rather than from how many he's scored. So a player who's been unlucky near the goal line keeps a strong projection, and a player who's been scoring on every chance doesn't get much of a boost.</p>
+<h2>Should Score More From Here</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Player</th>
+<th>Team</th>
+<th>TDs scored</th>
+<th>TDs from his chances</th>
+<th>Rest of season</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ashton Jeanty</td>
+<td>Raiders</td>
+<td>2</td>
+<td>5.0</td>
+<td>RB6</td>
+</tr>
+<tr>
+<td>Tony Pollard</td>
+<td>Titans</td>
+<td>1</td>
+<td>4.1</td>
+<td>RB25</td>
+</tr>
+<tr>
+<td>Chase Brown</td>
+<td>Bengals</td>
+<td>1</td>
+<td>3.5</td>
+<td>RB10</td>
+</tr>
+<tr>
+<td>J.K. Dobbins</td>
+<td>Broncos</td>
+<td>1</td>
+<td>3.3</td>
+<td>RB28</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ashton Jeanty, Raiders.</strong> He has 7 carries inside the 5-yard line and 2 touchdowns all season. An average back would have scored about 5 times with his chances. The model expects about 0.8 touchdowns a game from him from here, double his pace so far. He's already a top-10 back, and there's room for more.</p>
+<p><strong>Tony Pollard, Titans.</strong> He has 13 carries inside the 10, including 6 inside the 5, and one touchdown to show for it. The model expects about one touchdown every two games from here. He's RB25, a solid flex play.</p>
+<p><strong>Chase Brown, Bengals.</strong> One touchdown on 4 carries inside the 5 and a handful of red-zone targets. The model expects about 0.7 touchdowns a game from him from here, and ranks him RB10 for the rest of the season.</p>
+<p><strong>J.K. Dobbins, Broncos.</strong> He has 6 carries inside the 5 and one touchdown. He's a bench back or bye-week fill-in at RB28, but the goal-line work is real.</p>
+<h2>Running Hot</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Player</th>
+<th>Team</th>
+<th>TDs scored</th>
+<th>TDs from his chances</th>
+<th>Rest of season</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jaxon Smith-Njigba</td>
+<td>Seahawks</td>
+<td>7</td>
+<td>3.3</td>
+<td>WR3</td>
+</tr>
+<tr>
+<td>Christian Watson</td>
+<td>Packers</td>
+<td>6</td>
+<td>2.6</td>
+<td>WR16</td>
+</tr>
+<tr>
+<td>George Kittle</td>
+<td>49ers</td>
+<td>4</td>
+<td>1.8</td>
+<td>TE7</td>
+</tr>
+<tr>
+<td>Parker Washington</td>
+<td>Jaguars</td>
+<td>4</td>
+<td>1.7</td>
+<td>WR23</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Jaxon Smith-Njigba, Seahawks.</strong> Seven touchdowns in five games, more than double what his targets would usually produce. He does get a lot of red-zone looks (11 targets inside the 20), and the model still ranks him WR3. Expect about one touchdown every two games from here instead of more than one a game. Keep starting him. Just don't value him like this pace will last.</p>
+<p><strong>Christian Watson, Packers.</strong> Six touchdowns, with only 7 targets inside the 20 all season. The model expects about one touchdown every three games from here, and ranks him WR16. If a trade partner is valuing him on his touchdowns, listen.</p>
+<p><strong>George Kittle, 49ers.</strong> Four touchdowns, about two more than his chances usually produce. He's still TE7 and a weekly starter. The touchdowns just won't come this often.</p>
+<p><strong>Parker Washington, Jaguars.</strong> Four touchdowns on 35 targets. He's WR23 in our model, a low-end starter. His touchdowns make him look better than that right now.</p>
+<h2>What to Do With This</h2>
+<p>Touchdown luck evens out, but slowly, and five games is a small sample. Use it to decide between two players who are close, or as a reason to trade for a running back whose manager is tired of watching him get stuffed at the 1.</p>
+<p>These numbers move every day, so check the <a href="https://pigskinprojections.com/">live rankings</a> before you make an offer. Tap any player to see the touchdowns per game the model expects from him.</p></article>
+<a class="nlband nlend" href="https://pigskin-projections.kit.com/saturday" target="_blank" rel="noopener"><span class="nltxt"><b><i class="nlfree">100% Free</i>Get every article in one free email</b><span>Every Saturday morning. Confirm in your inbox and you're in.</span></span><span class="nlbtn">Get the Free Saturday Email</span></a>
+<footer class="foot"><p><b>Pigskin Projections.</b> Get the whole week in one email every Saturday: <a href="https://pigskin-projections.kit.com/saturday" rel="noopener">sign up free</a>. Follow us on Instagram: <a href="https://www.instagram.com/pigskin_projections/" rel="noopener">@pigskin_projections</a>. Projections are built from public NFL data from <a href="https://github.com/nflverse/nflverse-data" rel="noopener">nflverse</a>, shared under the <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a> licence. Not affiliated with or endorsed by the NFL, any team, sportsbook or fantasy site.</p>
+<p>For information and entertainment only; nothing here is betting advice. You must be of legal age to bet (19+ in most of Canada, 21+ in most US states). If betting stops being fun, help is available: in the US call 1-800-GAMBLER; in Canada, contact your provincial problem-gambling helpline.</p></footer>
+</div></body></html>
